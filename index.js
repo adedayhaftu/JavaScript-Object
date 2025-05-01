@@ -1,5 +1,11 @@
-
 // num 1
+
+//-Define an object with it's proporties
+//-create totalSteps method
+//-Iterate through each step inputs
+//-Get the sum of the steps
+//-Create averageSteps method
+//-Get the average of steps
 
 const User = {
     name: "Adeday",
@@ -45,6 +51,10 @@ console.log(User.averageSteps());
 
 // num 2
 
+//- Create a constructer with it's properties
+//- Create a function displayRecipe
+//- create a function isQuickMeal to check if it's true
+
 function RecipeInstructor(name, ingredients, cookTime) {
     this.name = name;
     this.ingredients = ingredients;
@@ -62,6 +72,10 @@ console.log(dessertRecipes.isQuickMeal());
 
 
 // num 3
+
+//- Create an object Car with different properties
+//- Create a function addService that adds new dates
+//- Create a function lastServiceDate which gets the most latest date
 
 const Car = {
     model: "G Wagon",
@@ -81,6 +95,11 @@ console.log(Car.lastServiceDate());
 
 
 // num 4
+
+//- Create an object Playlist which contain properties and methods
+//- Create a method addSong with string title which add songs
+//- Create a method removeSong which removes song
+//- create a method listSongs which lists all songs  
 
 const Playlist = {
     songs: ["Thunder", "Enemy", "Bones"],
@@ -102,11 +121,15 @@ Playlist.listSongs();
 
 // num 5
 
+//- Create a constructor Course with string title, lessons and completedLessons 
+//- Create a method markComplete which adding a new lesson
+//- Create a method getProgress which returns the progress from a variable kotlinCourse
+
 function Course(title, lessons) {
     this.title = title;
     this.lessons = lessons;
     this.completedLessons = [];
-    this.markComplete=function(lesson){
+    this.markComplete= function(lesson){
         this.completedLessons.push(lesson);
     }
     this.getProgress = function () {
